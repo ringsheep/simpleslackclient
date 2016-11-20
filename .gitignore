@@ -20,7 +20,7 @@ xcuserdata/
 ## Other
 *.moved-aside
 *.xcuserstate
-SlackClient.xcworkspace/
+SlackClient.xcworkspace/xcuserdata/*.xcuserdatad/UserInterfaceState.xcuserstate
 SlackClient/GZSPrivateKeys.m
 
 ## Obj-C/Swift specific
