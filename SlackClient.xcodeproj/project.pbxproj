@@ -1,0 +1,1076 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6926A69B8D228767EC75D55E /* Pods_SlackClientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A343B752C851999F10BDC31B /* Pods_SlackClientUITests.framework */; };
+		84271D1C1F3C759F03A80D2C /* Pods_SlackClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EF1D75DB552D8BE5397993A /* Pods_SlackClientTests.framework */; };
+		991A2D621DDDBAD0009DE5CD /* GZSChannelsListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 991A2D611DDDBAD0009DE5CD /* GZSChannelsListController.m */; };
+		991A2D661DDDCEB3009DE5CD /* GZSChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 991A2D651DDDCEB3009DE5CD /* GZSChannelCell.m */; };
+		991A2D6A1DDF04D3009DE5CD /* GZSTimestampTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 991A2D691DDF04D3009DE5CD /* GZSTimestampTransformer.m */; };
+		991A2D6E1DDF2828009DE5CD /* GZSTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 991A2D6D1DDF2828009DE5CD /* GZSTopic.m */; };
+		991A2D721DDF321E009DE5CD /* GZSProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 991A2D711DDF321E009DE5CD /* GZSProfile.m */; };
+		993992231DD2FF9A00ABC62A /* GZSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 993992221DD2FF9A00ABC62A /* GZSUser.m */; };
+		993992261DD3019C00ABC62A /* GZSTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 993992251DD3019C00ABC62A /* GZSTeam.m */; };
+		9939922C1DD4ACC900ABC62A /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9939922B1DD4ACC900ABC62A /* Authentication.storyboard */; };
+		993992351DD5D61B00ABC62A /* GZSSegueNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 993992341DD5D61B00ABC62A /* GZSSegueNames.m */; };
+		993992391DD5D6D500ABC62A /* GZSPrivateKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 993992381DD5D6D500ABC62A /* GZSPrivateKeys.m */; };
+		993F0C771DDB0FDE00CC68CC /* GZSChannelService.m in Sources */ = {isa = PBXBuildFile; fileRef = 993F0C761DDB0FDE00CC68CC /* GZSChannelService.m */; };
+		993F0C7B1DDB103B00CC68CC /* GZSChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 993F0C7A1DDB103B00CC68CC /* GZSChannel.m */; };
+		993F0C7F1DDB2C2600CC68CC /* GZSMemberId.m in Sources */ = {isa = PBXBuildFile; fileRef = 993F0C7E1DDB2C2600CC68CC /* GZSMemberId.m */; };
+		993F0C831DDB38F300CC68CC /* GZSAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 993F0C821DDB38F300CC68CC /* GZSAccount.m */; };
+		993F0C871DDB3B7900CC68CC /* GZSScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 993F0C861DDB3B7900CC68CC /* GZSScope.m */; };
+		993F0C8C1DDB3E2E00CC68CC /* GZSAccountService.m in Sources */ = {isa = PBXBuildFile; fileRef = 993F0C8B1DDB3E2E00CC68CC /* GZSAccountService.m */; };
+		993F0C941DDB89D300CC68CC /* RLMResults+GZSlackClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 993F0C931DDB89D300CC68CC /* RLMResults+GZSlackClient.m */; };
+		9940770A1DCE099800D0396B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 994077091DCE099800D0396B /* main.m */; };
+		9940770D1DCE099800D0396B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940770C1DCE099800D0396B /* AppDelegate.m */; };
+		994077101DCE099800D0396B /* GZSAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940770F1DCE099800D0396B /* GZSAuthController.m */; };
+		994077131DCE099800D0396B /* Content.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994077111DCE099800D0396B /* Content.storyboard */; };
+		994077151DCE099800D0396B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 994077141DCE099800D0396B /* Assets.xcassets */; };
+		994077181DCE099800D0396B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994077161DCE099800D0396B /* LaunchScreen.storyboard */; };
+		994077231DCE099800D0396B /* SlackClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 994077221DCE099800D0396B /* SlackClientTests.m */; };
+		9940772E1DCE099800D0396B /* SlackClientUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940772D1DCE099800D0396B /* SlackClientUITests.m */; };
+		99486C801DD0A806000DCB4C /* GZSApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 99486C7F1DD0A806000DCB4C /* GZSApiClient.m */; };
+		99486C831DD0B60C000DCB4C /* GZSUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 99486C821DD0B60C000DCB4C /* GZSUserService.m */; };
+		99AB27A71DE0D5EA00564D56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AB27A61DE0D5EA00564D56 /* Main.storyboard */; };
+		99AB27AB1DE0D7CC00564D56 /* GZSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AB27AA1DE0D7CC00564D56 /* GZSMainViewController.m */; };
+		E0F1AB874331CC0578D2CCF4 /* Pods_SlackClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B430E6671294E8EA5A6C1A17 /* Pods_SlackClient.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9940771F1DCE099800D0396B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994076FD1DCE099700D0396B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 994077041DCE099700D0396B;
+			remoteInfo = SlackClient;
+		};
+		9940772A1DCE099800D0396B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994076FD1DCE099700D0396B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 994077041DCE099700D0396B;
+			remoteInfo = SlackClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		057B93099C85F3498B7B025D /* Pods-SlackClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlackClientTests/Pods-SlackClientTests.release.xcconfig"; sourceTree = "<group>"; };
+		3975DD35A96BCA8015101CBF /* Pods-SlackClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlackClient/Pods-SlackClient.debug.xcconfig"; sourceTree = "<group>"; };
+		4FD44A903F676341B47E76FD /* Pods-SlackClientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackClientUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlackClientUITests/Pods-SlackClientUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		65F0C6C789AB34808829CE9B /* Pods-SlackClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlackClientTests/Pods-SlackClientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7EF1D75DB552D8BE5397993A /* Pods_SlackClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlackClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D63B0F281338FF154DEBF8 /* Pods-SlackClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlackClient/Pods-SlackClient.release.xcconfig"; sourceTree = "<group>"; };
+		991A2D601DDDBAD0009DE5CD /* GZSChannelsListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZSChannelsListController.h; sourceTree = "<group>"; };
+		991A2D611DDDBAD0009DE5CD /* GZSChannelsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZSChannelsListController.m; sourceTree = "<group>"; };
+		991A2D641DDDCEB3009DE5CD /* GZSChannelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZSChannelCell.h; sourceTree = "<group>"; };
+		991A2D651DDDCEB3009DE5CD /* GZSChannelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZSChannelCell.m; sourceTree = "<group>"; };
+		991A2D681DDF04D3009DE5CD /* GZSTimestampTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZSTimestampTransformer.h; sourceTree = "<group>"; };
+		991A2D691DDF04D3009DE5CD /* GZSTimestampTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZSTimestampTransformer.m; sourceTree = "<group>"; };
+		991A2D6C1DDF2828009DE5CD /* GZSTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZSTopic.h; sourceTree = "<group>"; };
+		991A2D6D1DDF2828009DE5CD /* GZSTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZSTopic.m; sourceTree = "<group>"; };
+		991A2D701DDF321E009DE5CD /* GZSProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZSProfile.h; sourceTree = "<group>"; };
+		991A2D711DDF321E009DE5CD /* GZSProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZSProfile.m; sourceTree = "<group>"; };
+		993992211DD2FF9A00ABC62A /* GZSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZSUser.h; sourceTree = "<group>"; };
+		993992221DD2FF9A00ABC62A /* GZSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZSUser.m; sourceTree = "<group>"; };
+		993992241DD3019C00ABC62A /* GZSTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZSTeam.h; sourceTree = "<group>"; };
+		993992251DD3019C00ABC62A /* GZSTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZSTeam.m; sourceTree = "<group>"; };
+		9939922B1DD4ACC900ABC62A /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		993992311DD5CCAC00ABC62A /* GZSSegueNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZSSegueNames.h; sourceTree = "<group>"; };
+		993992341DD5D61B00ABC62A /* GZSSegueNames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZSSegueNames.m; sourceTree = "<group>"; };
+		993992371DD5D69900ABC62A /* GZSPrivateKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZSPrivateKeys.h; sourceTree = "<group>"; };
+		993992381DD5D6D500ABC62A /* GZSPrivateKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZSPrivateKeys.m; sourceTree = "<group>"; };
+		993F0C751DDB0FDE00CC68CC /* GZSChannelService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZSChannelService.h; sourceTree = "<group>"; };
+		993F0C761DDB0FDE00CC68CC /* GZSChannelService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZSChannelService.m; sourceTree = "<group>"; };
+		993F0C791DDB103B00CC68CC /* GZSChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZSChannel.h; sourceTree = "<group>"; };
+		993F0C7A1DDB103B00CC68CC /* GZSChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZSChannel.m; sourceTree = "<group>"; };
+		993F0C7D1DDB2C2600CC68CC /* GZSMemberId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZSMemberId.h; sourceTree = "<group>"; };
+		993F0C7E1DDB2C2600CC68CC /* GZSMemberId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZSMemberId.m; sourceTree = "<group>"; };
+		993F0C811DDB38F300CC68CC /* GZSAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZSAccount.h; sourceTree = "<group>"; };
+		993F0C821DDB38F300CC68CC /* GZSAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZSAccount.m; sourceTree = "<group>"; };
+		993F0C851DDB3B7900CC68CC /* GZSScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZSScope.h; sourceTree = "<group>"; };
+		993F0C861DDB3B7900CC68CC /* GZSScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZSScope.m; sourceTree = "<group>"; };
+		993F0C8A1DDB3E2E00CC68CC /* GZSAccountService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZSAccountService.h; sourceTree = "<group>"; };
+		993F0C8B1DDB3E2E00CC68CC /* GZSAccountService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZSAccountService.m; sourceTree = "<group>"; };
+		993F0C921DDB89D300CC68CC /* RLMResults+GZSlackClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RLMResults+GZSlackClient.h"; sourceTree = "<group>"; };
+		993F0C931DDB89D300CC68CC /* RLMResults+GZSlackClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RLMResults+GZSlackClient.m"; sourceTree = "<group>"; };
+		994077051DCE099800D0396B /* SlackClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		994077091DCE099800D0396B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9940770B1DCE099800D0396B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9940770C1DCE099800D0396B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9940770E1DCE099800D0396B /* GZSAuthController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GZSAuthController.h; sourceTree = "<group>"; };
+		9940770F1DCE099800D0396B /* GZSAuthController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GZSAuthController.m; sourceTree = "<group>"; };
+		994077121DCE099800D0396B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Content.storyboard; sourceTree = "<group>"; };
+		994077141DCE099800D0396B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		994077171DCE099800D0396B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		994077191DCE099800D0396B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9940771E1DCE099800D0396B /* SlackClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlackClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		994077221DCE099800D0396B /* SlackClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlackClientTests.m; sourceTree = "<group>"; };
+		994077241DCE099800D0396B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		994077291DCE099800D0396B /* SlackClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlackClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9940772D1DCE099800D0396B /* SlackClientUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlackClientUITests.m; sourceTree = "<group>"; };
+		9940772F1DCE099800D0396B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99486C7E1DD0A806000DCB4C /* GZSApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZSApiClient.h; sourceTree = "<group>"; };
+		99486C7F1DD0A806000DCB4C /* GZSApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZSApiClient.m; sourceTree = "<group>"; };
+		99486C811DD0B60C000DCB4C /* GZSUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZSUserService.h; sourceTree = "<group>"; };
+		99486C821DD0B60C000DCB4C /* GZSUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZSUserService.m; sourceTree = "<group>"; };
+		99AB27A61DE0D5EA00564D56 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		99AB27A91DE0D7CC00564D56 /* GZSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZSMainViewController.h; sourceTree = "<group>"; };
+		99AB27AA1DE0D7CC00564D56 /* GZSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZSMainViewController.m; sourceTree = "<group>"; };
+		A343B752C851999F10BDC31B /* Pods_SlackClientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlackClientUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B430E6671294E8EA5A6C1A17 /* Pods_SlackClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlackClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E59DB194847E7C6BD1B5A314 /* Pods-SlackClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackClientUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlackClientUITests/Pods-SlackClientUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		994077021DCE099700D0396B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0F1AB874331CC0578D2CCF4 /* Pods_SlackClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9940771B1DCE099800D0396B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84271D1C1F3C759F03A80D2C /* Pods_SlackClientTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		994077261DCE099800D0396B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6926A69B8D228767EC75D55E /* Pods_SlackClientUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		005E7803042DCED97A791DD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3975DD35A96BCA8015101CBF /* Pods-SlackClient.debug.xcconfig */,
+				88D63B0F281338FF154DEBF8 /* Pods-SlackClient.release.xcconfig */,
+				65F0C6C789AB34808829CE9B /* Pods-SlackClientTests.debug.xcconfig */,
+				057B93099C85F3498B7B025D /* Pods-SlackClientTests.release.xcconfig */,
+				4FD44A903F676341B47E76FD /* Pods-SlackClientUITests.debug.xcconfig */,
+				E59DB194847E7C6BD1B5A314 /* Pods-SlackClientUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		64B741066E8DF5486DCD31A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B430E6671294E8EA5A6C1A17 /* Pods_SlackClient.framework */,
+				7EF1D75DB552D8BE5397993A /* Pods_SlackClientTests.framework */,
+				A343B752C851999F10BDC31B /* Pods_SlackClientUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		991A2D631DDDCE91009DE5CD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				991A2D641DDDCEB3009DE5CD /* GZSChannelCell.h */,
+				991A2D651DDDCEB3009DE5CD /* GZSChannelCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		991A2D671DDF04AF009DE5CD /* Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				991A2D681DDF04D3009DE5CD /* GZSTimestampTransformer.h */,
+				991A2D691DDF04D3009DE5CD /* GZSTimestampTransformer.m */,
+			);
+			name = Transformers;
+			sourceTree = "<group>";
+		};
+		991A2D6B1DDF2810009DE5CD /* Topic */ = {
+			isa = PBXGroup;
+			children = (
+				991A2D6C1DDF2828009DE5CD /* GZSTopic.h */,
+				991A2D6D1DDF2828009DE5CD /* GZSTopic.m */,
+			);
+			name = Topic;
+			sourceTree = "<group>";
+		};
+		991A2D6F1DDF320B009DE5CD /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				991A2D701DDF321E009DE5CD /* GZSProfile.h */,
+				991A2D711DDF321E009DE5CD /* GZSProfile.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		993992271DD301DE00ABC62A /* User */ = {
+			isa = PBXGroup;
+			children = (
+				991A2D6F1DDF320B009DE5CD /* Profile */,
+				993992211DD2FF9A00ABC62A /* GZSUser.h */,
+				993992221DD2FF9A00ABC62A /* GZSUser.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		993992281DD301E800ABC62A /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				993992241DD3019C00ABC62A /* GZSTeam.h */,
+				993992251DD3019C00ABC62A /* GZSTeam.m */,
+			);
+			name = Team;
+			sourceTree = "<group>";
+		};
+		993992291DD30AD000ABC62A /* User Service */ = {
+			isa = PBXGroup;
+			children = (
+				99486C811DD0B60C000DCB4C /* GZSUserService.h */,
+				99486C821DD0B60C000DCB4C /* GZSUserService.m */,
+			);
+			name = "User Service";
+			sourceTree = "<group>";
+		};
+		9939922A1DD30ADB00ABC62A /* Team Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Team Service";
+			sourceTree = "<group>";
+		};
+		9939922D1DD5C6D200ABC62A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				9940770E1DCE099800D0396B /* GZSAuthController.h */,
+				9940770F1DCE099800D0396B /* GZSAuthController.m */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		9939922E1DD5C71400ABC62A /* Channels List */ = {
+			isa = PBXGroup;
+			children = (
+				991A2D601DDDBAD0009DE5CD /* GZSChannelsListController.h */,
+				991A2D611DDDBAD0009DE5CD /* GZSChannelsListController.m */,
+			);
+			name = "Channels List";
+			sourceTree = "<group>";
+		};
+		9939922F1DD5C73E00ABC62A /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		993992301DD5CC9800ABC62A /* Segue names */ = {
+			isa = PBXGroup;
+			children = (
+				993992311DD5CCAC00ABC62A /* GZSSegueNames.h */,
+				993992341DD5D61B00ABC62A /* GZSSegueNames.m */,
+			);
+			name = "Segue names";
+			sourceTree = "<group>";
+		};
+		993992361DD5D67C00ABC62A /* Private keys */ = {
+			isa = PBXGroup;
+			children = (
+				993992371DD5D69900ABC62A /* GZSPrivateKeys.h */,
+				993992381DD5D6D500ABC62A /* GZSPrivateKeys.m */,
+			);
+			name = "Private keys";
+			sourceTree = "<group>";
+		};
+		993F0C741DDB0F6D00CC68CC /* Channel Service */ = {
+			isa = PBXGroup;
+			children = (
+				993F0C751DDB0FDE00CC68CC /* GZSChannelService.h */,
+				993F0C761DDB0FDE00CC68CC /* GZSChannelService.m */,
+			);
+			name = "Channel Service";
+			sourceTree = "<group>";
+		};
+		993F0C781DDB101F00CC68CC /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				991A2D6B1DDF2810009DE5CD /* Topic */,
+				993F0C7C1DDB2C1000CC68CC /* Member Id */,
+				993F0C791DDB103B00CC68CC /* GZSChannel.h */,
+				993F0C7A1DDB103B00CC68CC /* GZSChannel.m */,
+			);
+			name = Channel;
+			sourceTree = "<group>";
+		};
+		993F0C7C1DDB2C1000CC68CC /* Member Id */ = {
+			isa = PBXGroup;
+			children = (
+				993F0C7D1DDB2C2600CC68CC /* GZSMemberId.h */,
+				993F0C7E1DDB2C2600CC68CC /* GZSMemberId.m */,
+			);
+			name = "Member Id";
+			sourceTree = "<group>";
+		};
+		993F0C801DDB38DA00CC68CC /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				993F0C841DDB3AE600CC68CC /* Scope */,
+				993F0C811DDB38F300CC68CC /* GZSAccount.h */,
+				993F0C821DDB38F300CC68CC /* GZSAccount.m */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		993F0C841DDB3AE600CC68CC /* Scope */ = {
+			isa = PBXGroup;
+			children = (
+				993F0C851DDB3B7900CC68CC /* GZSScope.h */,
+				993F0C861DDB3B7900CC68CC /* GZSScope.m */,
+			);
+			name = Scope;
+			sourceTree = "<group>";
+		};
+		993F0C891DDB3E1700CC68CC /* Account Service */ = {
+			isa = PBXGroup;
+			children = (
+				993F0C8A1DDB3E2E00CC68CC /* GZSAccountService.h */,
+				993F0C8B1DDB3E2E00CC68CC /* GZSAccountService.m */,
+			);
+			name = "Account Service";
+			sourceTree = "<group>";
+		};
+		993F0C911DDB899E00CC68CC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				993F0C921DDB89D300CC68CC /* RLMResults+GZSlackClient.h */,
+				993F0C931DDB89D300CC68CC /* RLMResults+GZSlackClient.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		994076FC1DCE099700D0396B = {
+			isa = PBXGroup;
+			children = (
+				994077071DCE099800D0396B /* SlackClient */,
+				994077211DCE099800D0396B /* SlackClientTests */,
+				9940772C1DCE099800D0396B /* SlackClientUITests */,
+				994077061DCE099800D0396B /* Products */,
+				005E7803042DCED97A791DD2 /* Pods */,
+				64B741066E8DF5486DCD31A4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		994077061DCE099800D0396B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				994077051DCE099800D0396B /* SlackClient.app */,
+				9940771E1DCE099800D0396B /* SlackClientTests.xctest */,
+				994077291DCE099800D0396B /* SlackClientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		994077071DCE099800D0396B /* SlackClient */ = {
+			isa = PBXGroup;
+			children = (
+				99486C861DD0C896000DCB4C /* Controllers */,
+				994077401DCE652600D0396B /* Models */,
+				9940773E1DCE49F800D0396B /* Views */,
+				9940773D1DCE49C000D0396B /* Application */,
+				9940773C1DCE49AB00D0396B /* Services */,
+				9940773B1DCE49A500D0396B /* Core */,
+				994077081DCE099800D0396B /* Supporting Files */,
+				993F0C911DDB899E00CC68CC /* Extensions */,
+			);
+			path = SlackClient;
+			sourceTree = "<group>";
+		};
+		994077081DCE099800D0396B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				991A2D671DDF04AF009DE5CD /* Transformers */,
+				993992361DD5D67C00ABC62A /* Private keys */,
+				993992301DD5CC9800ABC62A /* Segue names */,
+				994077091DCE099800D0396B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		994077211DCE099800D0396B /* SlackClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				994077221DCE099800D0396B /* SlackClientTests.m */,
+				994077241DCE099800D0396B /* Info.plist */,
+			);
+			path = SlackClientTests;
+			sourceTree = "<group>";
+		};
+		9940772C1DCE099800D0396B /* SlackClientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9940772D1DCE099800D0396B /* SlackClientUITests.m */,
+				9940772F1DCE099800D0396B /* Info.plist */,
+			);
+			path = SlackClientUITests;
+			sourceTree = "<group>";
+		};
+		9940773B1DCE49A500D0396B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				99486C7E1DD0A806000DCB4C /* GZSApiClient.h */,
+				99486C7F1DD0A806000DCB4C /* GZSApiClient.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		9940773C1DCE49AB00D0396B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				993F0C891DDB3E1700CC68CC /* Account Service */,
+				993F0C741DDB0F6D00CC68CC /* Channel Service */,
+				9939922A1DD30ADB00ABC62A /* Team Service */,
+				993992291DD30AD000ABC62A /* User Service */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		9940773D1DCE49C000D0396B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9940770B1DCE099800D0396B /* AppDelegate.h */,
+				9940770C1DCE099800D0396B /* AppDelegate.m */,
+				994077141DCE099800D0396B /* Assets.xcassets */,
+				994077191DCE099800D0396B /* Info.plist */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		9940773E1DCE49F800D0396B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				991A2D631DDDCE91009DE5CD /* Cells */,
+				994077111DCE099800D0396B /* Content.storyboard */,
+				9939922B1DD4ACC900ABC62A /* Authentication.storyboard */,
+				994077161DCE099800D0396B /* LaunchScreen.storyboard */,
+				99AB27A61DE0D5EA00564D56 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		994077401DCE652600D0396B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				993F0C801DDB38DA00CC68CC /* Account */,
+				993F0C781DDB101F00CC68CC /* Channel */,
+				993992271DD301DE00ABC62A /* User */,
+				993992281DD301E800ABC62A /* Team */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		99486C861DD0C896000DCB4C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				99AB27A81DE0D79800564D56 /* Main */,
+				9939922F1DD5C73E00ABC62A /* Chat */,
+				9939922E1DD5C71400ABC62A /* Channels List */,
+				9939922D1DD5C6D200ABC62A /* Auth */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		99AB27A81DE0D79800564D56 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				99AB27A91DE0D7CC00564D56 /* GZSMainViewController.h */,
+				99AB27AA1DE0D7CC00564D56 /* GZSMainViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		994077041DCE099700D0396B /* SlackClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 994077321DCE099800D0396B /* Build configuration list for PBXNativeTarget "SlackClient" */;
+			buildPhases = (
+				E392DD21A4F7892AE2E4E6C7 /* [CP] Check Pods Manifest.lock */,
+				994077011DCE099700D0396B /* Sources */,
+				994077021DCE099700D0396B /* Frameworks */,
+				994077031DCE099700D0396B /* Resources */,
+				C49EE9BE3D7B503DCED907D0 /* [CP] Embed Pods Frameworks */,
+				828089D97D0C9DDAC19EFAD6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlackClient;
+			productName = SlackClient;
+			productReference = 994077051DCE099800D0396B /* SlackClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9940771D1DCE099800D0396B /* SlackClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 994077351DCE099800D0396B /* Build configuration list for PBXNativeTarget "SlackClientTests" */;
+			buildPhases = (
+				931C224E454D19E635BADD10 /* [CP] Check Pods Manifest.lock */,
+				9940771A1DCE099800D0396B /* Sources */,
+				9940771B1DCE099800D0396B /* Frameworks */,
+				9940771C1DCE099800D0396B /* Resources */,
+				D60CADF309A8CB032AA207BD /* [CP] Embed Pods Frameworks */,
+				BF6B2A309D1B13A577C992AA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				994077201DCE099800D0396B /* PBXTargetDependency */,
+			);
+			name = SlackClientTests;
+			productName = SlackClientTests;
+			productReference = 9940771E1DCE099800D0396B /* SlackClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		994077281DCE099800D0396B /* SlackClientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 994077381DCE099800D0396B /* Build configuration list for PBXNativeTarget "SlackClientUITests" */;
+			buildPhases = (
+				0998D848A095BAD6485FE11C /* [CP] Check Pods Manifest.lock */,
+				994077251DCE099800D0396B /* Sources */,
+				994077261DCE099800D0396B /* Frameworks */,
+				994077271DCE099800D0396B /* Resources */,
+				BA087A811F27157857344A89 /* [CP] Embed Pods Frameworks */,
+				696775FB2E5BF77D70D83AE6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9940772B1DCE099800D0396B /* PBXTargetDependency */,
+			);
+			name = SlackClientUITests;
+			productName = SlackClientUITests;
+			productReference = 994077291DCE099800D0396B /* SlackClientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		994076FD1DCE099700D0396B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GZS;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "George Zinyakov";
+				TargetAttributes = {
+					994077041DCE099700D0396B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = L738KA9SZ5;
+						ProvisioningStyle = Automatic;
+					};
+					9940771D1DCE099800D0396B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = L738KA9SZ5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 994077041DCE099700D0396B;
+					};
+					994077281DCE099800D0396B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = L738KA9SZ5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 994077041DCE099700D0396B;
+					};
+				};
+			};
+			buildConfigurationList = 994077001DCE099700D0396B /* Build configuration list for PBXProject "SlackClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 994076FC1DCE099700D0396B;
+			productRefGroup = 994077061DCE099800D0396B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				994077041DCE099700D0396B /* SlackClient */,
+				9940771D1DCE099800D0396B /* SlackClientTests */,
+				994077281DCE099800D0396B /* SlackClientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		994077031DCE099700D0396B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9939922C1DD4ACC900ABC62A /* Authentication.storyboard in Resources */,
+				99AB27A71DE0D5EA00564D56 /* Main.storyboard in Resources */,
+				994077181DCE099800D0396B /* LaunchScreen.storyboard in Resources */,
+				994077151DCE099800D0396B /* Assets.xcassets in Resources */,
+				994077131DCE099800D0396B /* Content.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9940771C1DCE099800D0396B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		994077271DCE099800D0396B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0998D848A095BAD6485FE11C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		696775FB2E5BF77D70D83AE6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlackClientUITests/Pods-SlackClientUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		828089D97D0C9DDAC19EFAD6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlackClient/Pods-SlackClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		931C224E454D19E635BADD10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA087A811F27157857344A89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlackClientUITests/Pods-SlackClientUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF6B2A309D1B13A577C992AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlackClientTests/Pods-SlackClientTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C49EE9BE3D7B503DCED907D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlackClient/Pods-SlackClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D60CADF309A8CB032AA207BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlackClientTests/Pods-SlackClientTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E392DD21A4F7892AE2E4E6C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		994077011DCE099700D0396B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				994077101DCE099800D0396B /* GZSAuthController.m in Sources */,
+				991A2D661DDDCEB3009DE5CD /* GZSChannelCell.m in Sources */,
+				9940770D1DCE099800D0396B /* AppDelegate.m in Sources */,
+				99486C801DD0A806000DCB4C /* GZSApiClient.m in Sources */,
+				993992391DD5D6D500ABC62A /* GZSPrivateKeys.m in Sources */,
+				993992351DD5D61B00ABC62A /* GZSSegueNames.m in Sources */,
+				991A2D6A1DDF04D3009DE5CD /* GZSTimestampTransformer.m in Sources */,
+				993F0C871DDB3B7900CC68CC /* GZSScope.m in Sources */,
+				993F0C7B1DDB103B00CC68CC /* GZSChannel.m in Sources */,
+				993F0C831DDB38F300CC68CC /* GZSAccount.m in Sources */,
+				9940770A1DCE099800D0396B /* main.m in Sources */,
+				993F0C771DDB0FDE00CC68CC /* GZSChannelService.m in Sources */,
+				991A2D6E1DDF2828009DE5CD /* GZSTopic.m in Sources */,
+				99486C831DD0B60C000DCB4C /* GZSUserService.m in Sources */,
+				99AB27AB1DE0D7CC00564D56 /* GZSMainViewController.m in Sources */,
+				993F0C941DDB89D300CC68CC /* RLMResults+GZSlackClient.m in Sources */,
+				991A2D721DDF321E009DE5CD /* GZSProfile.m in Sources */,
+				993992231DD2FF9A00ABC62A /* GZSUser.m in Sources */,
+				993992261DD3019C00ABC62A /* GZSTeam.m in Sources */,
+				993F0C7F1DDB2C2600CC68CC /* GZSMemberId.m in Sources */,
+				991A2D621DDDBAD0009DE5CD /* GZSChannelsListController.m in Sources */,
+				993F0C8C1DDB3E2E00CC68CC /* GZSAccountService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9940771A1DCE099800D0396B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				994077231DCE099800D0396B /* SlackClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		994077251DCE099800D0396B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9940772E1DCE099800D0396B /* SlackClientUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		994077201DCE099800D0396B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 994077041DCE099700D0396B /* SlackClient */;
+			targetProxy = 9940771F1DCE099800D0396B /* PBXContainerItemProxy */;
+		};
+		9940772B1DCE099800D0396B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 994077041DCE099700D0396B /* SlackClient */;
+			targetProxy = 9940772A1DCE099800D0396B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		994077111DCE099800D0396B /* Content.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				994077121DCE099800D0396B /* Base */,
+			);
+			name = Content.storyboard;
+			sourceTree = "<group>";
+		};
+		994077161DCE099800D0396B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				994077171DCE099800D0396B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		994077301DCE099800D0396B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		994077311DCE099800D0396B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		994077331DCE099800D0396B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3975DD35A96BCA8015101CBF /* Pods-SlackClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L738KA9SZ5;
+				INFOPLIST_FILE = SlackClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zinyakov.SlackClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		994077341DCE099800D0396B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88D63B0F281338FF154DEBF8 /* Pods-SlackClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L738KA9SZ5;
+				INFOPLIST_FILE = SlackClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zinyakov.SlackClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		994077361DCE099800D0396B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F0C6C789AB34808829CE9B /* Pods-SlackClientTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L738KA9SZ5;
+				INFOPLIST_FILE = SlackClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zinyakov.slackClient.SlackClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlackClient.app/SlackClient";
+			};
+			name = Debug;
+		};
+		994077371DCE099800D0396B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 057B93099C85F3498B7B025D /* Pods-SlackClientTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L738KA9SZ5;
+				INFOPLIST_FILE = SlackClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zinyakov.slackClient.SlackClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlackClient.app/SlackClient";
+			};
+			name = Release;
+		};
+		994077391DCE099800D0396B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FD44A903F676341B47E76FD /* Pods-SlackClientUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = L738KA9SZ5;
+				INFOPLIST_FILE = SlackClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zinyakov.slackClient.SlackClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SlackClient;
+			};
+			name = Debug;
+		};
+		9940773A1DCE099800D0396B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59DB194847E7C6BD1B5A314 /* Pods-SlackClientUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = L738KA9SZ5;
+				INFOPLIST_FILE = SlackClientUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zinyakov.slackClient.SlackClientUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SlackClient;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		994077001DCE099700D0396B /* Build configuration list for PBXProject "SlackClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				994077301DCE099800D0396B /* Debug */,
+				994077311DCE099800D0396B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		994077321DCE099800D0396B /* Build configuration list for PBXNativeTarget "SlackClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				994077331DCE099800D0396B /* Debug */,
+				994077341DCE099800D0396B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		994077351DCE099800D0396B /* Build configuration list for PBXNativeTarget "SlackClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				994077361DCE099800D0396B /* Debug */,
+				994077371DCE099800D0396B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		994077381DCE099800D0396B /* Build configuration list for PBXNativeTarget "SlackClientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				994077391DCE099800D0396B /* Debug */,
+				9940773A1DCE099800D0396B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 994076FD1DCE099700D0396B /* Project object */;
+}

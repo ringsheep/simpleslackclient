@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OMJ-Ib-ezv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="h2a-fz-VUl">
+            <objects>
+                <viewController storyboardIdentifier="rootMainController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OMJ-Ib-ezv" customClass="GZSMainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vcd-5o-wsv"/>
+                        <viewControllerLayoutGuide type="bottom" id="FGU-T7-Ojt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Iar-Ua-BD8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="0nW-dw-Vls">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0nW-dw-Vls" firstAttribute="centerX" secondItem="Iar-Ua-BD8" secondAttribute="centerX" id="O7l-iN-LPZ"/>
+                            <constraint firstItem="0nW-dw-Vls" firstAttribute="centerY" secondItem="Iar-Ua-BD8" secondAttribute="centerY" id="QGT-VM-K2u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="7jg-RV-yUN" kind="presentation" identifier="kSegueFromMainToContent" modalTransitionStyle="flipHorizontal" id="ngd-GH-mWs"/>
+                        <segue destination="B5s-59-677" kind="presentation" identifier="kSegueFromMainToAuth" modalTransitionStyle="flipHorizontal" id="nDa-QU-08e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D9K-Sv-4Ab" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-545" y="-95"/>
+        </scene>
+        <!--Content-->
+        <scene sceneID="9gi-KV-YZ9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Content" id="7jg-RV-yUN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WKg-cF-Idr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="182" y="-306"/>
+        </scene>
+        <!--Authentication-->
+        <scene sceneID="V3C-Fd-Z7B">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Authentication" id="B5s-59-677" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pfj-kk-jWw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="104"/>
+        </scene>
+    </scenes>
+</document>

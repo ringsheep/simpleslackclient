@@ -1,0 +1,6 @@
+framework module Pods_SlackClientTests {
+  umbrella header "Pods-SlackClientTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

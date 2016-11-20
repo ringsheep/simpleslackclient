@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="V5o-Mz-cHI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Auth Controller-->
+        <scene sceneID="6u2-FF-VCs">
+            <objects>
+                <viewController storyboardIdentifier="rootAuthController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V5o-Mz-cHI" customClass="GZSAuthController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L8B-xg-nIm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ap2-hn-v6Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2l6-jr-gdz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FI2-zS-rPb">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="V5o-Mz-cHI" id="FRi-ov-hbT"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FI2-zS-rPb" firstAttribute="leading" secondItem="2l6-jr-gdz" secondAttribute="leading" id="Cz5-UM-yhE"/>
+                            <constraint firstItem="FI2-zS-rPb" firstAttribute="top" secondItem="L8B-xg-nIm" secondAttribute="bottom" id="ce9-zY-q7w"/>
+                            <constraint firstAttribute="trailing" secondItem="FI2-zS-rPb" secondAttribute="trailing" id="deN-cP-yAg"/>
+                            <constraint firstItem="Ap2-hn-v6Z" firstAttribute="top" secondItem="FI2-zS-rPb" secondAttribute="bottom" id="x3A-qC-vFk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authorizationWebView" destination="FI2-zS-rPb" id="qGy-XH-dXr"/>
+                        <segue destination="BBd-s1-frS" kind="presentation" identifier="kSegueFromAuthToMain" modalTransitionStyle="flipHorizontal" id="3XA-uf-c6q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PgX-Vv-gHO" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Main-->
+        <scene sceneID="I3P-1C-o4b">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="BBd-s1-frS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g4A-hJ-Y2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1013" y="38"/>
+        </scene>
+    </scenes>
+</document>
